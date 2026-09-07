@@ -1,27 +1,29 @@
 .light, body {
-    --primary: #316941;
-    --inversePrimary: #98d4a3;
-    --secondaryContainer: hsl(120, 37%, 87%);
-    --onSecondaryContainer: #394b3b;
-    --background: #f6fbf3;
-    --onSurface: #181d18;
-    --onSurfaceAlt: #414941;
-    --container: #ebf0e5;
-    --containerLow: #f1f5ed;
+    --primary: #4F7F8D;
+    --inversePrimary: #316369;
+    --secondaryContainer: #DCE8EC;
+    --onSecondaryContainer: #34464D;
+    --background: #F7FAFB;
+    --onSurface: #181D1F;
+    --onSurfaceAlt: #434A4E;
+    --container: #EAF0F2;
+    --containerLow: #F1F5F6;
 
-    --star: #ff9800;
+    --star: #E2C900;
+
+
 }
 
 @mixin dark {
-    --primary: #98d4a3;
-    --inversePrimary: #316941;
-    --secondaryContainer: #394b3b;
-    --onSecondaryContainer: #d3e8d3;
-    --background: #101510;
+    --primary: #70A0AF;
+    --inversePrimary: #316369;
+    --secondaryContainer: #39444b;
+    --onSecondaryContainer: #d3e0e8;
+    --background: #101114;
     --onSurface: #dfe4dc;
-    --onSurfaceAlt: #c1c9bf;
-    --container: #1c211c;
-    --containerLow: #181d18;
+    --onSurfaceAlt: #bfc3c9;
+    --container: #1c1e21;
+    --containerLow: #181a1d;
 
     --star: #e2e210;
 }

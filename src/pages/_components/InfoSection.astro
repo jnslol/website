@@ -11,11 +11,11 @@ import Clock from "@icons/clock.svg";
     </InfoChip>
 
     <InfoChip>
-        <Clock slot="icon"/> EST <div class="time"><span>-</span> <span id="time"/></div>
+        <Clock slot="icon"/> UTC-3 <div class="time"><span>-</span> <span id="time"/></div>
     </InfoChip>
 
     <InfoChip>
-        <Location slot="icon"/> USA
+        <Location slot="icon"/> Argentina
     </InfoChip>
 </div>
 
@@ -26,7 +26,7 @@ import Clock from "@icons/clock.svg";
 
     function updateTime() {
         var currentTime = new Date();
-        var timeString = currentTime.toLocaleString('en-US', { timeStyle: "short", timeZone: "America/New_York" });
+        var timeString = currentTime.toLocaleString('en-US', { timeStyle: "short", timeZone: "America/Argentina/Buenos_Aires" });
 
         document.getElementById("time")!.textContent = timeString;
     }

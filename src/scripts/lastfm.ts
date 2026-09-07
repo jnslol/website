@@ -23,7 +23,7 @@ export async function getNowPlaying(): Promise<Track | undefined> {
 
     url.searchParams.set("api_key", import.meta.env.PUBLIC_LASTFM_TOKEN);
     url.searchParams.set("method", "user.getRecentTracks");
-    url.searchParams.set("user", "WingCanListen");
+    url.searchParams.set("user", "butt3rflykn1fe");
     url.searchParams.set("limit", "1");
     url.searchParams.set("format", "json");
 

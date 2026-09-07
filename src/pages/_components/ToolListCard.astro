@@ -3,15 +3,13 @@ import Card from "@components/Card.astro";
 import InfoChip from "@components/InfoChip.astro";
 import Label from "@components/Label.astro";
 
-import JavaIcon from "@icons/languages/java.svg"
 import JSIcon from "@icons/languages/javascript.svg"
-import KotlinIcon from "@icons/languages/kotlin.svg"
+import PythonIcon from "@icons/languages/python.svg"
 import TSIcon from "@icons/languages/typescript.svg"
 
-import AndroidStudioIcon from "@icons/software/android_studio.svg"
 import VSCodeIcon from "@icons/software/vscode.svg"
 
-import ComposeIcon from "@icons/libraries/compose.svg"
+import TanstackIcon from "@icons/libraries/tanstack.svg"
 import AstroIcon from "@icons/libraries/astro.svg"
 import NextIcon from "@icons/libraries/nextjs.svg"
 ---
@@ -19,9 +17,6 @@ import NextIcon from "@icons/libraries/nextjs.svg"
 <Card class="tools-card">
     <Label>IDEs</Label>
     <div class="tools">
-        <InfoChip>
-            <AndroidStudioIcon slot="icon"/> Android Studio
-        </InfoChip>
 
         <InfoChip>
             <VSCodeIcon slot="icon"/> VSCode
@@ -31,11 +26,7 @@ import NextIcon from "@icons/libraries/nextjs.svg"
     <Label>Languages</Label>
     <div class="tools">
         <InfoChip>
-            <KotlinIcon slot="icon"/> Kotlin
-        </InfoChip>
-
-        <InfoChip>
-            <JavaIcon slot="icon"/> Java
+            <PythonIcon slot="icon"/> Python
         </InfoChip>
 
         <InfoChip>
@@ -50,7 +41,7 @@ import NextIcon from "@icons/libraries/nextjs.svg"
     <Label>Frameworks</Label>
     <div class="tools">
         <InfoChip>
-            <ComposeIcon slot="icon"/> Compose
+            <TanstackIcon slot="icon"/> Tanstack Start
         </InfoChip>
 
         <InfoChip>

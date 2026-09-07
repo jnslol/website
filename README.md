@@ -1,18 +1,12 @@
-# iamw.ing
-This codebase contains the code for my personal website/portfolio hosted at [`iamw.ing`](https://iamw.ing).
-
-## Badge
-I have an 88x31 badge available for anyone that wants to link to my site!
-You can access it via `https://iamw.ing/88x31/badge.gif` or use `https://iamw.ing/88x31/[frame].png` for a non-animated version.
-
-[![Wing](https://iamw.ing/88x31/badge.gif)](https://iamw.ing)
-
+# jns.lol
+code for my website [`jns.lol`](https://jns.lol)
+"inspired" by [wing's website](https://iamw.ing/)
 ## Build
 > [!NOTE]
 > You must have git, node, and pnpm installed
 
 1. Clone this repository
-   - `git clone https://github.com/wingio/iamw.ing && cd iamw.ing`
+   - `git clone https://github.com/jnslol/website && cd website`
 2. Install all dependencies
    - `pnpm i`
 3. Build the site

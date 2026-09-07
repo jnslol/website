@@ -1,11 +1,12 @@
 ---
-import avatar from "@assets/avatars/me.jpeg"
+import avatar from "@assets/avatars/me.jpg"
 import SocialsCard from "./SocialsCard.astro"
+import { Image } from "astro:assets";
 ---
 
 <div class="sidebar">
     <a href="/">
-        <img src={avatar.src} class="avatar" alt="Home" fetchpriority="high" />
+        <Image src={avatar} width=240 class="avatar" alt="Home" loading="eager" />
     </a>
 
     <SocialsCard />

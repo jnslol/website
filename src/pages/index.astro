@@ -1,6 +1,5 @@
 ---
-import Friends from './_components/Friends.astro';
-import Projects from './_components/Projects.astro';
+
 import InfoSection from './_components/InfoSection.astro';
 import ToolListCard from './_components/ToolListCard.astro';
 import NowPlayingCard from './_components/NowPlayingCard.astro';
@@ -11,35 +10,17 @@ import Label from '@components/Label.astro';
 import Default from '@layouts/Default.astro';
 ---
 
-<Default title="Wing - Home" description="22 year old Android dev and an okay designer.">
+<Default title="jns | 🏠" description="15 year old developer.">
 	<NowPlayingCard slot="sidebar" />
 
 	<Card id="about">
 		<Label>About</Label>
 
-		<h1>Hello, I'm Wing</h1>
-		I am a 23 year old Android developer as well as an okay designer.
+		<h1>Hello, I'm Juan</h1>
+		I am a 15 year old Typescript developer as well as an okay-ish reverse engineer.
 		
 		<InfoSection />
 	</Card>
 
 	<ToolListCard />
-
-	<div class="projects">
-		<Label>Projects</Label>
-		<Projects />
-	</div>
-
-	<Card id="friends">
-		<Label>Friends</Label>
-		<Friends />
-	</Card>
 </Default>
-
-<style>
-	.projects {
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
-	}
-</style>
