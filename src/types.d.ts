@@ -4,3 +4,8 @@ export type SocialAccount = {
     baseUrl: string;
     aliases: string[];
 };
+
+export type ShortLink = {
+    source: string;
+    target: string;
+};

@@ -1,0 +1,46 @@
+---
+import shorts from "@data/short.json";
+import type { GetStaticPaths } from "astro";
+import type { ShortLink } from "src/types";
+
+// Generates all short links (e.g. /s/discord)
+export const getStaticPaths = (() => {
+    return (shorts as ShortLink[]).map((link) => { return { params: { short: link.source.toLowerCase() } } });
+}) satisfies GetStaticPaths;
+
+// Retrieves the short link target from the URL key
+const { short } = Astro.params
+const link: ShortLink | undefined = (shorts as ShortLink[])
+    .find((entry) => {
+        return entry.source.toLowerCase() === short?.toLowerCase()
+    })
+
+if (!link) {
+    return Astro.redirect("/404", 404);
+}
+---
+
+<!DOCTYPE html>
+<html data-redir-url={link.target}>
+    <head>
+        <title>Redirecting...</title>
+        <meta name="theme-color" content="#02E376"/>
+		<link rel="icon" href="/favicon.png" />
+
+		<meta name="og:title" content={`JNS - s/${link.source}`} />
+		<meta name="og:description" content={`Short link redirecting to ${link.target}`} />
+		<meta name="og:url" content={link.target} />
+		<meta name="og:image" content="/favicon.png" />
+
+        <meta http-equiv="refresh" content={`0;url=${link.target}`} />
+        <link rel="canonical" href={link.target} />
+    </head>
+    <body>
+        Redirecting...
+    </body>
+</html>
+
+<script>
+    // @ts-ignore
+    window.location = document.querySelector("html")?.dataset["redirUrl"] || "about:blank"
+</script>
